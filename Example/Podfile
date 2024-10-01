@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AppsOnAir-AppSync_Example' do
+  pod 'AppsOnAir-AppSync', :path => '../'
+
+  target 'AppsOnAir-AppSync_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
