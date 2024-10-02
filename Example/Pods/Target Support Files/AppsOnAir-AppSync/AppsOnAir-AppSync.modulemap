@@ -1,0 +1,6 @@
+framework module AppsOnAir_AppSync {
+  umbrella header "AppsOnAir-AppSync-umbrella.h"
+
+  export *
+  module * { export * }
+}

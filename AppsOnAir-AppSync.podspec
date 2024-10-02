@@ -22,21 +22,19 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/164989979/AppsOnAir-AppSync'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '164989979' => 'harshil.gandhi@logicwind.com' }
   s.source           = { :git => 'https://github.com/164989979/AppsOnAir-AppSync.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.swift_version  = '5.0'
+  s.ios.deployment_target = '12.0'
+
+  # Access the all the UI File within the pod 
+  s.resources = ['AppsOnAir-AppSync/Assets/**/*'] # for access SwiftUI  inside ForceUpdate
 
   s.source_files = 'AppsOnAir-AppSync/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'AppsOnAir-AppSync' => ['AppsOnAir-AppSync/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # AppsOnAir Core pod
+  s.dependency 'AppsOnAir-Core', '~> 0.0.1'
+ 
 end

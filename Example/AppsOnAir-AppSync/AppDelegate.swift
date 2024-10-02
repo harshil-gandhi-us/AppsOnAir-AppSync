@@ -1,12 +1,5 @@
-//
-//  AppDelegate.swift
-//  AppsOnAir-AppSync
-//
-//  Created by 164989979 on 10/01/2024.
-//  Copyright (c) 2024 164989979. All rights reserved.
-//
-
 import UIKit
+import AppsOnAir_AppSync
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +7,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //MARK: - Declarations
+        //AppsOnAir AppSync ios services Initialization
+        let appsOnAirStateService = AppSyncService()
+
+        //MARK: - View Methods
+        //Help to enable sync manager for app
+        appsOnAirStateService.sync(directory: ["showNativeUI":true]) { appUpdateData in
+            //Write the code here when showNative UI is false
+        }
         // Override point for customization after application launch.
         return true
     }

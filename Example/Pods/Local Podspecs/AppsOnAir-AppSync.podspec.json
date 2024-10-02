@@ -1,0 +1,32 @@
+{
+  "name": "AppsOnAir-AppSync",
+  "version": "0.1.0",
+  "summary": "A short description of AppsOnAir-AppSync.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/164989979/AppsOnAir-AppSync",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "164989979": "harshil.gandhi@logicwind.com"
+  },
+  "source": {
+    "git": "https://github.com/164989979/AppsOnAir-AppSync.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "resources": [
+    "AppsOnAir-AppSync/Assets/**/*"
+  ],
+  "source_files": "AppsOnAir-AppSync/Classes/**/*",
+  "dependencies": {
+    "AppsOnAir-Core": [
+      "~> 0.0.1"
+    ]
+  },
+  "swift_version": "5.0"
+}

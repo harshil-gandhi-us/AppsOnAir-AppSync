@@ -1,5 +1,5 @@
 import XCTest
-import AppsOnAir-AppSync
+import AppsOnAir_AppSync
 
 class Tests: XCTestCase {
     
