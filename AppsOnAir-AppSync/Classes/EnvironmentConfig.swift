@@ -8,7 +8,7 @@ struct EnvironmentConfig{
     
 // MARK: - Production Config:
 //    static let serverBaseURl = "https://server.appsonair.com/"
-//    static let cdnBaseURL = "https://appsonair-prod.b-cdn.net/"
+//    static let cdnBaseURL = "https://cdn.appsonair.com/"
     
     
     
