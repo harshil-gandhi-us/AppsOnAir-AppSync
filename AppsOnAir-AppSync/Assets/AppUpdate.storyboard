@@ -149,8 +149,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXx-0n-RK9">
-                                        <rect key="frame" x="174.5" y="166" width="101.5" height="32"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXx-0n-RK9">
+                                        <rect key="frame" x="153" y="166" width="105" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="HDQ-x4-Jlj"/>
                                         </constraints>
@@ -163,11 +163,11 @@
                                             <action selector="onTapDismissButton:" destination="ppt-Hz-8o1" eventType="touchUpInside" id="FGf-vd-7XV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-Di-kEs">
-                                        <rect key="frame" x="286" y="166" width="80" height="32"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-Di-kEs">
+                                        <rect key="frame" x="266" y="166" width="100" height="32"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="qT7-IA-9IS"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="VTV-uU-xHU"/>
                                             <constraint firstAttribute="height" constant="32" id="yVt-Ze-chS"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -234,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LE-nQ-SPP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-196"/>
+            <point key="canvasLocation" x="934.78260869565224" y="-196.20535714285714"/>
         </scene>
     </scenes>
     <resources>
