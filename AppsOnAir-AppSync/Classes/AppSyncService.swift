@@ -25,8 +25,7 @@ public class AppSyncService : NSObject {
     let appsOnAirCoreServices = AppsOnAirCoreServices()
     
     /// display message while forgot to set showNativeUI in project
-    private var errorMessage:String = "AppsOnAir showNativeUI is Not initialized for more details: \n https://documentation.appsonair.com" // !!!: Developer Guideline URL
-    
+    private var errorMessage:String = "AppsOnAir APIKey is Not initialized for more details: \n https://documentation.appsonair.com" // !!!: Developer Guideline URL
     //MARK: - Methods
     
     /// network status change handler
@@ -84,6 +83,8 @@ public class AppSyncService : NSObject {
             networkStateChange { appUpdateData in
                 completion(appUpdateData)
             }
+        }else {
+            completion(["error":errorMessage])
         }
     }
     
