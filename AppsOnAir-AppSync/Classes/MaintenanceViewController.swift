@@ -1,4 +1,5 @@
 import UIKit
+import AppsOnAir_Core
 import Foundation
 
 class MaintenanceViewController: UIViewController {
@@ -58,9 +59,17 @@ class MaintenanceViewController: UIViewController {
                 self.staticMaintenanceView.isHidden = true
                 self.updateView.isHidden = true
                 self.appTitleText.text = Bundle.main.appName
-                if let imageUrlStr = maintenanceData.value(forKey: "image") as? String {
-                    let imageUrl = URL(string: imageUrlStr)
-                    self.maintenanceLogoImageView.load(url: imageUrl!)
+                if let imageUrlStr = maintenanceData.value(forKey: "image") as? String,
+                   let imageUrl = URL(string: imageUrlStr) {
+                    // Use the valid image URL
+                    self.maintenanceLogoImageView.load(url: imageUrl)
+                } else {
+                    // Use a default URL if the image URL is nil or invalid then set deafult icons
+                    if let image = UIImage(named: "ic_maintenance", in: Bundle(for: type(of: self)), compatibleWith: nil) {
+                        self.maintenanceLogoImageView.image = image
+                    } else {
+                        Logger.logInternal("Image not found")
+                    }
                 }
                 if let bgColorCode = maintenanceData.value(forKey: "backgroundColorCode") as? String {
                     self.maintenanceView.backgroundColor = UIColor(hex: bgColorCode)
