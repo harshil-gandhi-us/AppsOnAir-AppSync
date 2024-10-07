@@ -64,7 +64,7 @@ class MaintenanceViewController: UIViewController {
                     // Use the valid image URL
                     self.maintenanceLogoImageView.load(url: imageUrl)
                 } else {
-                    // Use a default URL if the image URL is nil or invalid then set deafult icons
+                    // Use a default URL if the image URL is nil or invalid then set default icons
                     if let image = UIImage(named: "ic_maintenance", in: Bundle(for: type(of: self)), compatibleWith: nil) {
                         self.maintenanceLogoImageView.image = image
                     } else {
@@ -108,8 +108,8 @@ class MaintenanceViewController: UIViewController {
                     }
                     let versionCompare = Bundle.main.releaseVersionNumber!.compare(iosMinBuildVersion!, options: .numeric)
                     if versionCompare == .orderedSame {
-                        let builNumber = Bundle.main.buildVersionNumber!.compare(iosMinBuildNumber!, options: .numeric)
-                        if builNumber == .orderedAscending {
+                        let buildNumber = Bundle.main.buildVersionNumber!.compare(iosMinBuildNumber!, options: .numeric)
+                        if buildNumber == .orderedAscending {
                             self.showUpdateView(isForceUpdate!)
                         } else {
                             self.dismissController()
