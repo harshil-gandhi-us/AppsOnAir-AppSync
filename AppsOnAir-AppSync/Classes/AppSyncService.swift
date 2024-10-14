@@ -89,7 +89,7 @@ public class AppSyncService : NSObject {
     }
     
     ///help to present App Update Alert
-    func presentAppUpdate(appUpdateInfo: NSDictionary) {
+    private func presentAppUpdate(appUpdateInfo: NSDictionary) {
         if (appUpdateInfo.count > 0) {
             DispatchQueue.main.sync {
                 let bundle = Bundle(for: type(of: self))

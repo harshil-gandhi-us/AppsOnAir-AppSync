@@ -143,7 +143,7 @@ class MaintenanceViewController: UIViewController {
     
    public func dismissController() {
         self.dismiss(animated: true) {
-            // This code snippet is for fixing one UI accessbility related bug for our other cross platform plugin
+            // This code snippet is for fixing one UI accessability related bug for our other cross platform plugin
             NotificationCenter.default.post(name: NSNotification.Name("visibilityChanges"), object: nil, userInfo: ["isPresented": false])
         }
     }

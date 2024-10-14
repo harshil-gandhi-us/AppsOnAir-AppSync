@@ -5,7 +5,7 @@ struct AppSyncApiService {
     
     static func fetchAppUpdate(_ appID: String, completion: @escaping(NSDictionary) -> ()) {
         let session = URLSession(configuration: .default)
-//        Server API URL from EnvironmentConfig
+        // Server API URL from EnvironmentConfig
         let url = EnvironmentConfig.serverURL + appID
         let apiURL : URL = URL(string: url)!
         
@@ -34,7 +34,7 @@ struct AppSyncApiService {
     static func cdnRequest(_ appID: String, completion: @escaping(NSDictionary) -> ()) {
         let session = URLSession(configuration: .default)
         
-//        CDN API URL from EnvironmentConfig
+        // CDN API URL from EnvironmentConfig
         let url = "\(EnvironmentConfig.cdnURL)\(appID).json?now=\(Date().timeIntervalSince1970)"
         let apiURL : URL = URL(string: url)!
         

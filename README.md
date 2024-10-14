@@ -16,6 +16,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Minimum deployment target: 12.0
+
 ## Installation
 
 AppsOnAir-AppSync is available through [CocoaPods](https://cocoapods.org). To install
