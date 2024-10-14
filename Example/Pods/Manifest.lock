@@ -1,9 +1,9 @@
 PODS:
   - AppsOnAir-AppSync (0.1.0):
-    - AppsOnAir-Core (~> 0.0.1)
+    - AppsOnAir-Core
   - AppsOnAir-Core (0.0.1):
     - ReachabilitySwift
-  - ReachabilitySwift (5.2.3)
+  - ReachabilitySwift (5.2.4)
 
 DEPENDENCIES:
   - AppsOnAir-AppSync (from `../`)
@@ -18,9 +18,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppsOnAir-AppSync: a4d070a6cc4fe8470ed349b049cea52ec0e0e964
+  AppsOnAir-AppSync: 0f88d99a913df20e0347ae74ac7b49a0f7234b83
   AppsOnAir-Core: 220848815951591f32fd61a5b28e4a9cf83d0d96
-  ReachabilitySwift: 7f151ff156cea1481a8411701195ac6a984f4979
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
 
 PODFILE CHECKSUM: 348500c9a9cb0eda3b830e3ca13abc77ca822b3b
 

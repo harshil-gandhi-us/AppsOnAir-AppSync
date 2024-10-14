@@ -1,9 +1,14 @@
 # AppsOnAir-AppSync
 
-[![CI Status](https://img.shields.io/travis/164989979/AppsOnAir-AppSync.svg?style=flat)](https://travis-ci.org/164989979/AppsOnAir-AppSync)
 [![Version](https://img.shields.io/cocoapods/v/AppsOnAir-AppSync.svg?style=flat)](https://cocoapods.org/pods/AppsOnAir-AppSync)
 [![License](https://img.shields.io/cocoapods/l/AppsOnAir-AppSync.svg?style=flat)](https://cocoapods.org/pods/AppsOnAir-AppSync)
-[![Platform](https://img.shields.io/cocoapods/p/AppsOnAir-AppSync.svg?style=flat)](https://cocoapods.org/pods/AppsOnAir-AppSync)
+
+## Overview
+
+AppsOnAir-AppSync is an iOS CocoaPod that enforces mandatory app updates and manages app state dynamically based on network conditions, ensuring version compliance and optimal performance.
+
+⭐️ Compatible with Objective-C, Swift, and SwiftUI
+
 
 ## Example
 
@@ -22,7 +27,7 @@ pod 'AppsOnAir-AppSync'
 
 ## Author
 
-164989979, harshil.gandhi@logicwind.com
+devtools-logicwind, devtools@logicwind.com
 
 ## License
 

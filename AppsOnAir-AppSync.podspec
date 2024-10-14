@@ -9,32 +9,24 @@
 Pod::Spec.new do |s|
   s.name             = 'AppsOnAir-AppSync'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AppsOnAir-AppSync.'
+  s.summary          = 'AppsOnAir-AppSync is library for managing app updates and its maintenance.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description      = 'AppsOnAir-AppSync is library for managing app updates and its maintenance. It will handle from out web portal.'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/164989979/AppsOnAir-AppSync'
+  s.homepage         = 'https://documentation.appsonair.com/Mobile-Quickstart/ios-sdk-setup'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '164989979' => 'harshil.gandhi@logicwind.com' }
-  s.source           = { :git => 'https://github.com/164989979/AppsOnAir-AppSync.git', :tag => s.version.to_s }
+  s.author           = { 'devtools-logicwind' => 'devtools@logicwind.com' }
+  s.source           = { :git => 'https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git', :tag => s.version.to_s }
 
   s.swift_version  = '5.0'
   s.ios.deployment_target = '12.0'
 
   # Access the all the UI File within the pod 
-  s.resources = ['AppsOnAir-AppSync/Assets/**/*'] # for access SwiftUI  inside ForceUpdate
+  s.resources = ['AppsOnAir-AppSync/Assets/**/*'] # for access SwiftUI  inside AppSync
 
   s.source_files = 'AppsOnAir-AppSync/Classes/**/*'
   
   # AppsOnAir Core pod
-  s.dependency 'AppsOnAir-Core', '~> 0.0.1'
+  s.dependency 'AppsOnAir-Core'
  
 end
